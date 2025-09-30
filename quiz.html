@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take Test | CU Scholarship</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">CU Scholarship</a>
+      <ul>
+        <!-- <li><a href="index.html">Home</a></li>
+        <li><a href="quiz.html" class="active">Take Test</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="quiz-container">
+      <h1>Covenant University Scholarship Test</h1>
+
+      <!-- Home Screen -->
+      <div id="home-screen">
+        <p>Select your test category:</p>
+        <button onclick="startQuiz('junior')">Junior (Ages 7–12)</button>
+        <button onclick="startQuiz('senior')">Senior (Ages 13–15)</button>
+        <button onclick="startQuiz('professional')">Professional (Post High School)</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" style="display:none;">
+        <h2 id="question">Question text</h2>
+        <div id="options" class="options"></div>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn" style="display:none;" onclick="window.location.href='result.html'">Submit Test</button>
+        <p id="score" class="score"></p>
+      </div>
+      <!-- Timer Screen -->
+      <div id="timer" class="timer">Time Left: <span id="time">30:00</span></div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Covenant University</p>
+  </footer>
+
+  <script src="emotion.js"></script>
+</body>
+</html>
